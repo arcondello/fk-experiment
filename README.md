@@ -3,8 +3,18 @@
 ## Install Instructions
 
 ```
+git submodule update
 pip install -r requirements.txt
 python setup.py install
+```
+
+## Running the tests
+
+```
+git submodule update
+pip install -r requirements.txt
+python setup.py build_ext --inplace
+make -C tests/ tests
 ```
 
 
